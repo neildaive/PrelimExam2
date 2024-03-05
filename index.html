@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="shortcut icon" href="././images/favicon.png">
+    <title>Blogster</title>
+    
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        var main = new Splide( '#main-carousel', {
+          type      : 'fade',
+          rewind    : true,
+          pagination: false,
+          arrows    : false,
+        } );
+      
+        var thumbnails = new Splide( '#thumbnail-carousel', {
+          fixedWidth  : 100,
+          fixedHeight : 60,
+          gap         : 10,
+          rewind      : true,
+          pagination  : false,
+          isNavigation: true,
+          breakpoints : {
+            600: {
+              fixedWidth : 60,
+              fixedHeight: 44,
+            },
+          },
+        } );
+      
+        main.sync( thumbnails );
+        main.mount();
+        thumbnails.mount();
+
+        
+      });
+      
+          </script>
+          
+            
+       
+        
+</head>
+<body>
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+        <h1 class="text-white">Bohol's Best Tourist Spots</h1>
+        <nav>
+            <ul class="list-inline">
+              <li class="list-inline-item active"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <center>
+    <div class="container">
+        <div id="main-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="././assets/images/1.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/2.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/3.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/4.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/5.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/6.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/7.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/8.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/9.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/10.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/11.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/12.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/13.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="././assets/images/14.jpg" alt="">
+              </li>
+
+  
+              
+            </ul>
+          </div>
+        </div>
+      <section
+            id="thumbnail-carousel"
+            class="splide"
+            aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="././assets/images/1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/2.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/3.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/4.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/5.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/6.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/7.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/8.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/9.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/10.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/11.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/12.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/13.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="././assets/images/14.jpg" alt="">
+                </li>
+>
+  
+                
+              </ul>
+            </div>
+  </section>
+  </div>
+</center>
+    
+   
+   
+  
+
+    <main>
+      <div class="carousel-background">
+      <div class="carousel-container" id="carouselContainer">
+        <button class="carousel-btn prev-btn">&lt;</button>
+        <div class="carousel">
+            <img src="././images/image1.jpg" alt="Blog Post 1">
+            <img src="././images/image2.jpg" alt="Blog Post 2">
+            <img src="././images/image3.jpg" alt="Blog Post 3"> 
+      
+        </div>
+        <button class="carousel-btn next-btn">&gt;</button>
+    </div>
+
+    
+    
+
+        <article>
+            <h2><a href="http://www.chocolatehills.net/" target="_blank">Chocolate Hills</a></h2>
+            <p class="post-info">Published on January 1, 2024</p>
+            <p>"The Chocolate Hills are a geological formation located in the Bohol province of the Philippines. Renowned for their unusual appearance, the hills consist of at least 1,260 cone-shaped hills spread over an area of about 50 square kilometers (20 sq mi). During the dry season, the grass-covered hills turn brown, resembling chocolate candies, hence the name "Chocolate Hills." These formations are considered a natural wonder and a popular tourist attraction in the Philippines, drawing visitors from around the world to marvel at their unique beauty and geological significance."</p>
+        </article>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <div class="carousel">
+                <img src="././images/image_1.jpg" alt="Blog Post 1">
+                <img src="././images/image_2.jpg" alt="Blog Post 2">
+                <img src="././images/image_3.jpg" alt="Blog Post 3"> 
+          
+            </div>
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+       
+        <article>
+            <h2><a href="https://www.alonaboholdiversclub.com/" target="_blank">Bohol Divers Club</a></h2>
+            <p class="post-info">Published on January 2, 2024</p>
+            <p>"The Bohol Divers Club is a renowned diving organization based in the province of Bohol, Philippines. It offers a range of diving services and activities, including guided dives, dive courses, and dive trips to explore the rich marine biodiversity of Bohol's waters. With experienced instructors and guides, the club provides opportunities for both novice and experienced divers to discover the vibrant underwater ecosystems of Bohol, which include coral reefs, diverse fish species, and fascinating marine life. The club is committed to promoting responsible diving practices and environmental conservation, making it a popular choice for diving enthusiasts seeking memorable underwater experiences in the Philippines."</p>
+        </article>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <div class="carousel">
+                <img src="././images/food_image1.jpg" alt="Blog Post 1">
+                <img src="././images/food_image2.jpg" alt="Blog Post 2">
+                <img src="././images/food_image3.jpg" alt="Blog Post 3"> 
+          
+            </div>
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+       
+        <article>
+            <h2><a href="https://lobocriverwatch.com/" target="_blank">Loboc River</a></h2>
+            <p class="post-info">Published on January 3, 2024</p>
+            <p>"Loboc River is a scenic waterway flowing through the lush landscapes of Bohol Island in the Philippines. Renowned for its serene beauty and emerald-green waters, it offers visitors the opportunity to enjoy tranquil river cruises amidst the tropical surroundings. The river is flanked by verdant forests and traditional villages, providing a glimpse into local life and culture. Tourists often partake in floating restaurant experiences, where they can savor authentic Filipino cuisine while drifting along the peaceful waters of the Loboc River, making it a popular destination for nature lovers and travelers seeking relaxation and cultural immersion."</p>
+        </article>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <div class="carousel">
+                <img src="././images/bit2.jpg" alt="Blog Post 1">
+                <img src="././images/bit1.jpg" alt="Blog Post 2">
+                <img src="././images/bit3.jpg" alt="Blog Post 3"> 
+          
+            </div>
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+       
+        <article>
+            <h2><a href="https://peakd.com/hive-168869/@junebride/bohollywood-see-the-world-in-one-place" target="_blank">Mirror of the World</a></h2>
+            <p class="post-info">Published on January 4, 2024</p>
+            <p>"Bohollywood" is a whimsical nickname given to the province of Bohol in the Philippines, drawing a playful comparison to the renowned entertainment hub of Hollywood in California, USA. This moniker reflects Bohol's emerging status as a vibrant tourist destination with its own unique charm and attractions. Renowned for its stunning natural landscapes, including the iconic Chocolate Hills and pristine beaches, Bohol offers visitors a cinematic experience amidst its picturesque scenery. Additionally, the province is rich in cultural heritage, boasting historic landmarks such as centuries-old churches and ancestral houses, as well as lively festivals and traditional performances. With its blend of natural beauty, cultural richness, and hospitality, Bohol captures the imagination of travelers, earning it the affectionate title of "Bohollywood."</p>
+        </article>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <div class="carousel">
+                <img src="././images/pro3.jpg" alt="Blog Post 1">
+                <img src="././images/pro2.jpg" alt="Blog Post 2">
+                <img src="././images/pro1.jpg" alt="Blog Post 3"> 
+          
+            </div>
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+       
+        <article>
+            <h2><a href="https://boholcarrental.com.ph/bohol-tour-package/bohol-countryside-tour/bohol-tarsier-sanctuary/" target="_blank">Bilar Tarsier Sanctuary</a></h2>
+            <p class="post-info">Published on January 5, 2024</p>
+            <p>"
+              The Bilar Tarsier Sanctuary is a protected area located in Bilar, Bohol, Philippines, dedicated to the conservation and preservation of the Philippine tarsier, one of the world's smallest primates. This sanctuary offers visitors a unique opportunity to observe these elusive creatures in their natural habitat. Visitors can take guided tours through the sanctuary's forested areas, where they may catch glimpses of tarsiers resting in the trees during the day. The sanctuary provides an educational experience about tarsier behavior, biology, and the importance of conservation efforts to protect this endangered species. It serves as a vital sanctuary for tarsiers, offering them a safe environment free from threats such as habitat destruction and poaching."</p>
+        </article>
+      </div>
+
+        
+    </main>
+    
+
+
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+          <p>&copy; 2024 Blogster. All rights reserved.</p>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+    
+
+  
+    
+    <script src="common-header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+ 
+   
+</body>
+</html>
